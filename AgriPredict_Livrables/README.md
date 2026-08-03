@@ -110,8 +110,10 @@ python --version
 
 1. Cloner le dépôt
 ```bash
-git clone https://github.com/votre-compte/projet-force-n.git
-cd projet-force-n
+git  clone https://github.com/ilimane/AgriPredict.git
+cd  AgriPredict
+# 2. Accéder au dossier des livrables (contenant le notebook et les données)
+cd AgriPredict_Livrables
 ```
 
 2. Installer les dépendances
@@ -122,22 +124,22 @@ pip install -r requirements.txt
 3. Exécuter le Notebook (recommandé)
 ```bash
 # Dans Google Colab
-# Ouvrir Projet_Force_N.ipynb et exécuter toutes les cellules
+# Ouvrir agripredict_complete.ipynb et exécuter toutes les cellules
 
 # Ou en local
-jupyter notebook Projet_Force_N.ipynb
+jupyter agripredict_complete.ipynb
 ```
 
 4. Exécuter le script Python
 ```bash
-python projet_force_n.py
+Code_Source_Projet_Force_N.py
 ```
 
 5. Lancer l'interface Gradio
 ```python
 # Dans le notebook, la dernière cellule lance Gradio
 # Ou en ligne de commande :
-python -c "from projet_force_n import create_interface; create_interface().launch()"
+python -c "agripredict_complete.ipynb import create_interface; create_interface().launch()"
 ```
 
 📖 Guide d'Utilisation de l'Interface
@@ -192,8 +194,8 @@ Utilisez les exemples pour tester rapidement le système :
 | Rôle                        | Nom                  | Email                          | Contributions                                                |
 |-----------------------------|----------------------|--------------------------------|--------------------------------------------------------------|
 | Chef de Projet / Data Scientist | Ilimane GNING        | gning.ilimane@ugb.edu.sn         | Coordination, Modélisation, Documentation, Interface Gradio, Design |
-| Data Scientist              | ABDOU KHADRE DIALLO  | abdoukhadre.diallo@ugb.edu.sn    | EDA, Modèles, Optimisation                                   |
-| Data Engineer               | FATOU FAYE           | fatou.faye@ugb.edu.sn            | Prétraitement, Déploiement                                   |
+| Data Engineer             | ABDOU KHADRE DIALLO  |                                    | EDA, Modèles, Optimisation                                   |
+| Data  Scientist              | FATOU FAYE           |                                  | Prétraitement, Déploiement                                   |
 
 📚 Références
 *   Crop Recommendation Dataset - Kaggle
@@ -214,10 +216,10 @@ Ce projet est sous licence MIT.
 | Nom                  | Email                          | Rôle                                        |
 |----------------------|--------------------------------|---------------------------------------------|
 | Ilimane GNING        | gning.ilimane@ugb.edu.sn         | Chef de Projet, Data Scientist, Interface Gradio |
-| ABDOU KHADRE DIALLO  | abdoukhadre.diallo@ugb.edu.sn    | Data Scientist                              |
-| FATOU FAYE           | fatou.faye@ugb.edu.sn            | Data Engineer                               |
+| ABDOU KHADRE DIALLO  |                                  | Data Engineer                              |
+| FATOU FAYE           |                                   | Data Scientist                               |
 
-GitHub : [https://github.com/votre-compte]
+GitHub : [https://github.com/ilimane/AgriPredict]
 
 📅 Dernière mise à jour : 2026-07-28
 📌 Version : 1.0
